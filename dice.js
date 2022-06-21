@@ -1,9 +1,8 @@
 
 var randomVariable1 = Math.floor(Math.random() * 6 ) + 1;
 
-var result = `${randomVariable1}.png`;
+var result = randomVariable1 + ".png";
 
+var image1 = document.querySelector(".img1");
 
-document.getElementById("img1").setAttribute("src","result");
-
-console.log(result);
+image1.setAttribute("src", result);
